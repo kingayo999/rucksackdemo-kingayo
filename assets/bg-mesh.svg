@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" preserveAspectRatio="none">
+  <defs>
+    <!-- Base background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+
+    <!-- Soft blue light spots -->
+    <radialGradient id="g1" cx="220" cy="160" r="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#93c5fd" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="1380" cy="180" r="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="320" cy="980" r="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#bfdbfe" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#bfdbfe" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g4" cx="1000" cy="820" r="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Subtle diagonal sheen -->
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Very soft vignette -->
+    <radialGradient id="vignette" cx="800" cy="600" r="950" gradientUnits="userSpaceOnUse">
+      <stop offset="70%" stop-color="#0f172a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.06"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Base fill -->
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+
+  <!-- Mesh lights -->
+  <rect width="1600" height="1200" fill="url(#g1)"/>
+  <rect width="1600" height="1200" fill="url(#g2)"/>
+  <rect width="1600" height="1200" fill="url(#g3)"/>
+  <rect width="1600" height="1200" fill="url(#g4)"/>
+
+  <!-- Diagonal sheen band -->
+  <g opacity="0.5">
+    <polygon points="-200,300 1600,0 1800,200 0,520" fill="url(#sheen)"/>
+  </g>
+
+  <!-- Vignette for depth -->
+  <rect width="1600" height="1200" fill="url(#vignette)"/>
+</svg>

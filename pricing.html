@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pricing | RuckSack To Vacuum Pack Cleaning Services</title>
+
+    <meta name="description"
+        content="Check out our competitive pricing for cleaning services. Transparent pricing with no hidden fees.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body class="bg-white text-gray-900 overflow-x-hidden">
+
+    <!-- HEADER -->
+
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50 shadow-sm">
+
+        <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+            <div class="flex items-center gap-2">
+                <img src="logo.png" class="logo h-12 md:h-14" alt="RuckSack To Vacuum Pack Logo">
+                <span class="font-semibold text-gray-900 text-sm md:text-base">RuckSack To Vacuum Pack</span>
+            </div>
+
+            <nav class="hidden md:flex gap-6 text-gray-700">
+
+                <a href="index.html" class="hover:text-blue-600 transition-colors">Home</a>
+                <a href="services.html" class="hover:text-blue-600 transition-colors">Services</a>
+                <a href="pricing.html" class="hover:text-blue-600 transition-colors">Pricing</a>
+                <a href="reviews.html" class="hover:text-blue-600 transition-colors">Reviews</a>
+                <a href="faq.html" class="hover:text-blue-600 transition-colors">FAQ</a>
+
+            </nav>
+
+            <button id="mobile-menu-btn" class="md:hidden text-gray-700 p-2">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+
+            <a href="#booking" class="cta-primary hidden-mobile">
+                Book Cleaning
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed hidden bg-white shadow-xl z-40">
+        <div class="flex flex-col p-6 gap-4">
+            <a href="index.html" class="hover:text-blue-600 font-semibold border-b border-gray-100 pb-2">Home</a>
+            <a href="services.html" class="hover:text-blue-600 font-semibold border-b border-gray-100 pb-2">Services</a>
+            <a href="pricing.html" class="hover:text-blue-600 font-semibold border-b border-gray-100 pb-2">Pricing</a>
+            <a href="reviews.html" class="hover:text-blue-600 font-semibold border-b border-gray-100 pb-2">Reviews</a>
+            <a href="#booking" class="cta-primary text-center mt-2">Book Cleaning</a>
+        </div>
+    </div>
+
+    <!-- HERO PRICING -->
+
+    <section class="hero min-h-screen flex items-center pt-32 text-center bg-gradient-to-br from-blue-50 to-indigo-100">
+
+        <div class="max-w-4xl mx-auto p-6">
+
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-gray-900">
+                Transparent Pricing
+            </h1>
+
+            <p class="text-gray-600 mb-8 text-lg">
+                No hidden fees, no surprises. Get a free quote today and see why our pricing is unbeatable.
+            </p>
+
+            <a href="#pricing" class="cta-primary text-lg px-8 py-4">View Packages</a>
+
+        </div>
+
+    </section>
+
+    <!-- PRICING -->
+
+    <section id="pricing" class="py-20">
+
+        <h2 class="section-title">Cleaning Packages</h2>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 p-6">
+
+            <div class="price-card">
+                <h3 class="text-gray-900">Standard Clean</h3>
+                <p class="text-gray-600">Routine home cleaning for regular maintenance.</p>
+                <div class="text-3xl font-bold my-4 text-blue-600">$100+</div>
+                <ul class="text-left space-y-2 mb-6 text-gray-600">
+                    <li>&#10003; Dusting and wiping</li>
+                    <li>&#10003; Vacuuming and mopping</li>
+                    <li>&#10003; Bathroom cleaning</li>
+                    <li>&#10003; Kitchen cleaning</li>
+                    <li>&#10003; 2-3 hours service</li>
+                </ul>
+                <a href="#booking" class="cta-primary hidden-mobile">Book Now</a>
+            </div>
+
+            <div class="price-card highlight">
+                <h3 class="text-gray-900">Deep Clean</h3>
+                <p class="text-gray-600">Full detailed cleaning for a complete refresh.</p>
+                <div class="text-3xl font-bold my-4 text-blue-600">$200+</div>
+                <ul class="text-left space-y-2 mb-6 text-gray-600">
+                    <li>&#10003; All standard services</li>
+                    <li>&#10003; Inside appliances</li>
+                    <li>&#10003; Baseboards and vents</li>
+                    <li>&#10003; Window sills</li>
+                    <li>&#10003; 4-6 hours service</li>
+                </ul>
+                <a href="#booking" class="cta-primary hidden-mobile">Book Now</a>
+            </div>
+
+            <div class="price-card">
+                <h3 class="text-gray-900">Office Package</h3>
+                <p class="text-gray-600">Professional commercial cleaning solutions.</p>
+                <div class="text-3xl font-bold my-4 text-blue-600">Custom Quote</div>
+                <ul class="text-left space-y-2 mb-6 text-gray-600">
+                    <li>&#10003; Desk and surface cleaning</li>
+                    <li>&#10003; Restroom maintenance</li>
+                    <li>&#10003; Common area cleaning</li>
+                    <li>&#10003; Trash and recycling</li>
+                    <li>&#10003; Flexible scheduling</li>
+                </ul>
+                <a href="#booking" class="cta-primary hidden-mobile">Get Quote</a>
+            </div>
+
+        </div>
+
+        <p class="text-center mt-8 text-gray-300">Prices starting at $100. Final pricing depends on home size,
+            condition, and specific requirements. All prices include eco-friendly supplies and professional service.</p>
+
+    </section>
+
+    <!-- ADDITIONAL SERVICES -->
+
+    <section class="py-20 bg-gray-50">
+
+        <h2 class="section-title">Additional Services & Add-ons</h2>
+
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+
+            <div class="glass-card p-6 text-center bg-white">
+                <h4 class="font-semibold mb-2 text-gray-900">Carpet Cleaning</h4>
+                <p class="text-sm text-gray-600">$50/room</p>
+            </div>
+
+            <div class="glass-card p-6 text-center bg-white">
+                <h4 class="font-semibold mb-2 text-gray-900">Window Cleaning</h4>
+                <p class="text-sm text-gray-600">$5/window</p>
+            </div>
+
+            <div class="glass-card p-6 text-center bg-white">
+                <h4 class="font-semibold mb-2 text-gray-900">Laundry Service</h4>
+                <p class="text-sm text-gray-600">$25/load</p>
+            </div>
+
+            <div class="glass-card p-6 text-center bg-white">
+                <h4 class="font-semibold mb-2 text-gray-900">Oven Cleaning</h4>
+                <p class="text-sm text-gray-600">$75</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BOOKING FORM -->
+
+    <section id="booking" class="py-20">
+
+        <div class="max-w-4xl mx-auto p-6">
+
+            <h2 class="section-title">Get Your Free Quote</h2>
+
+            <div class="glass-card p-8 bg-white">
+
+                <h3 class="text-xl font-semibold mb-6 text-center text-gray-900">
+                    Quick Booking Form
+                </h3>
+
+                <form class="space-y-4">
+
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input class="form-input" placeholder="Name" required>
+                        <input class="form-input" placeholder="Phone" required>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input class="form-input" placeholder="Email" required>
+                        <select class="form-input" required>
+                            <option>Service Type</option>
+                            <option>Home Cleaning</option>
+                            <option>Deep Cleaning</option>
+                            <option>Office Cleaning</option>
+                            <option>Move In / Out</option>
+                            <option>Airbnb Cleaning</option>
+                        </select>
+                    </div>
+
+                    <select class="form-input" required>
+                        <option>Property Size</option>
+                        <option>Apartment (under 800 sq ft)</option>
+                        <option>Small Home (800-1500 sq ft)</option>
+                        <option>Medium Home (1500-2500 sq ft)</option>
+                        <option>Large Home (2500+ sq ft)</option>
+                        <option>Office/Commercial</option>
+                    </select>
+
+                    <textarea class="form-input" rows="4"
+                        placeholder="Additional details or special requests"></textarea>
+
+                    <button class="cta-primary w-full">
+                        Request Free Quote
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="bg-gray-900 py-10 text-center text-white">
+
+        <p>&copy; 2026 RuckSack To Vacuum Pack Cleaning Services Nigeria</p>
+
+        <p class="mt-2 text-gray-400">
+            Call Now: (+234) 803 123 4567
+        </p>
+
+    </footer>
+
+    <a href="tel:+2348031234567" class="mobile-call">
+        Call Now
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

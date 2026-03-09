@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services | RuckSack To Vacuum Pack Cleaning Services</title>
+
+    <meta name="description"
+        content="Explore our comprehensive cleaning services including home cleaning, deep cleaning, office cleaning, and more.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body class="bg-white text-gray-900 overflow-x-hidden">
+
+    <!-- HEADER -->
+
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50 shadow-sm">
+
+        <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+            <div class="flex items-center gap-2">
+                <img src="logo.png" class="logo h-12 md:h-14" alt="RuckSack To Vacuum Pack Logo">
+                <span class="font-semibold text-gray-900 text-sm md:text-base">RuckSack To Vacuum Pack</span>
+            </div>
+
+            <nav class="hidden md:flex gap-6 text-gray-700">
+
+                <a href="index.html" class="hover:text-blue-600 transition-colors">Home</a>
+                <a href="services.html" class="hover:text-blue-600 transition-colors">Services</a>
+                <a href="pricing.html" class="hover:text-blue-600 transition-colors">Pricing</a>
+                <a href="reviews.html" class="hover:text-blue-600 transition-colors">Reviews</a>
+                <a href="faq.html" class="hover:text-blue-600 transition-colors">FAQ</a>
+
+            </nav>
+
+            <button id="mobile-menu-btn" class="md:hidden text-gray-700 p-2">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+
+            <a href="pricing.html#booking" class="cta-primary hidden-mobile">
+                Book Cleaning
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed hidden bg-white shadow-xl z-40">
+        <div class="flex flex-col p-6 gap-4">
+            <a href="index.html" class="hover:text-blue-600 font-semibold border-b border-gray-100 pb-2">Home</a>
+            <a href="services.html" class="hover:text-blue-600 font-semibold border-b border-gray-100 pb-2">Services</a>
+            <a href="pricing.html" class="hover:text-blue-600 font-semibold border-b border-gray-100 pb-2">Pricing</a>
+            <a href="reviews.html" class="hover:text-blue-600 font-semibold border-b border-gray-100 pb-2">Reviews</a>
+            <a href="pricing.html#booking" class="cta-primary text-center mt-2">Book Cleaning</a>
+        </div>
+    </div>
+
+    <!-- HERO SERVICES -->
+
+    <section class="hero min-h-screen flex items-center pt-32 text-center bg-gradient-to-br from-blue-50 to-indigo-100">
+
+        <div class="max-w-4xl mx-auto p-6">
+
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-gray-900">
+                Our Cleaning Services
+            </h1>
+
+            <p class="text-gray-600 mb-8 text-lg">
+                From routine home cleaning to specialized deep cleans, we offer a wide range of professional cleaning
+                services tailored to your needs.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SERVICES -->
+
+    <section class="py-20">
+
+        <h2 class="section-title">Comprehensive Cleaning Solutions</h2>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
+
+            <div class="service-card">
+                <h3 class="text-gray-900">Home Cleaning</h3>
+                <p class="text-gray-600">Reliable recurring home cleaning services that keep your space tidy and fresh.
+                    Includes dusting, vacuuming, mopping, and bathroom cleaning.</p>
+                <ul class="mt-4 space-y-2 text-sm text-gray-600">
+                    <li>&#10003; Dusting and wiping surfaces</li>
+                    <li>&#10003; Vacuuming and mopping floors</li>
+                    <li>&#10003; Bathroom sanitization</li>
+                    <li>&#10003; Kitchen cleaning</li>
+                    <li>&#10003; Trash removal</li>
+                </ul>
+                <a href="pricing.html" class="cta-primary mt-4 inline-block">View Pricing</a>
+            </div>
+
+            <div class="service-card">
+                <h3 class="text-gray-900">Deep Cleaning</h3>
+                <p class="text-gray-600">Top to bottom detailed cleaning for a thorough refresh. Perfect for seasonal
+                    cleans or move-in preparations.</p>
+                <ul class="mt-4 space-y-2 text-sm text-gray-600">
+                    <li>&#10003; All standard cleaning tasks</li>
+                    <li>&#10003; Inside appliances</li>
+                    <li>&#10003; Baseboards and window sills</li>
+                    <li>&#10003; Light fixtures and vents</li>
+                    <li>&#10003; Upholstery and carpet shampooing</li>
+                </ul>
+                <a href="pricing.html" class="cta-primary mt-4 inline-block">View Pricing</a>
+            </div>
+
+            <div class="service-card">
+                <h3 class="text-gray-900">Office Cleaning</h3>
+                <p class="text-gray-600">Professional workspace cleaning to maintain a productive and healthy office
+                    environment.</p>
+                <ul class="mt-4 space-y-2 text-sm text-gray-600">
+                    <li>&#10003; Desk and surface cleaning</li>
+                    <li>&#10003; Common area maintenance</li>
+                    <li>&#10003; Restroom sanitization</li>
+                    <li>&#10003; Trash and recycling</li>
+                    <li>&#10003; Floor care</li>
+                </ul>
+                <a href="pricing.html" class="cta-primary mt-4 inline-block">View Pricing</a>
+            </div>
+
+            <div class="service-card">
+                <h3 class="text-gray-900">Move In / Out Cleaning</h3>
+                <p class="text-gray-600">Perfect cleaning for moving situations. Ensure your old place is spotless or
+                    your new home is ready to move in.</p>
+                <ul class="mt-4 space-y-2 text-sm text-gray-600">
+                    <li>&#10003; Deep cleaning all rooms</li>
+                    <li>&#10003; Appliance cleaning</li>
+                    <li>&#10003; Window cleaning</li>
+                    <li>&#10003; Carpet cleaning</li>
+                    <li>&#10003; Security deposit protection</li>
+                </ul>
+                <a href="pricing.html" class="cta-primary mt-4 inline-block">View Pricing</a>
+            </div>
+
+            <div class="service-card">
+                <h3 class="text-gray-900">Airbnb Cleaning</h3>
+                <p class="text-gray-600">Fast turnaround rental cleaning for short-term rentals. Quick, thorough, and
+                    reliable service.</p>
+                <ul class="mt-4 space-y-2 text-sm text-gray-600">
+                    <li>&#10003; Complete room refresh</li>
+                    <li>&#10003; Linen change and laundry</li>
+                    <li>&#10003; Kitchen and bathroom deep clean</li>
+                    <li>&#10003; Trash removal</li>
+                    <li>&#10003; Guest-ready inspection</li>
+                </ul>
+                <a href="pricing.html" class="cta-primary mt-4 inline-block">View Pricing</a>
+            </div>
+
+            <div class="service-card">
+                <h3 class="text-gray-900">Specialized Cleaning</h3>
+                <p class="text-gray-600">Custom cleaning services for unique needs, including post-construction cleanup,
+                    hoarders, and more.</p>
+                <ul class="mt-4 space-y-2 text-sm text-gray-600">
+                    <li>&#10003; Construction cleanup</li>
+                    <li>&#10003; Hoarder cleanup</li>
+                    <li>&#10003; Biohazard cleaning</li>
+                    <li>&#10003; Carpet and upholstery</li>
+                    <li>&#10003; Window cleaning</li>
+                </ul>
+                <a href="pricing.html" class="cta-primary mt-4 inline-block">View Pricing</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WHY CHOOSE US -->
+
+    <section class="py-20 bg-gray-50">
+
+        <div class="max-w-6xl mx-auto p-6">
+
+            <h2 class="section-title">Why Choose Our Services?</h2>
+
+            <div class="grid md:grid-cols-2 gap-12">
+
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Professional Team</h3>
+                    <p class="text-gray-600">Our cleaners are trained professionals with years of experience. All staff
+                        undergo background checks and are fully insured.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Eco-Friendly Products</h3>
+                    <p class="text-gray-600">We use only environmentally safe, non-toxic cleaning products that are safe
+                        for your family and pets.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Reliable Scheduling</h3>
+                    <p class="text-gray-600">Flexible booking with same-day and next-day availability. We respect your
+                        time and always arrive on schedule.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Satisfaction Guarantee</h3>
+                    <p class="text-gray-600">100% satisfaction guarantee. If you're not happy with the service, we'll
+                        return within 24 hours to make it right at no extra cost.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="bg-gray-900 py-10 text-center text-white">
+
+        <p>&copy; 2026 RuckSack To Vacuum Pack Cleaning Services Nigeria</p>
+
+        <p class="mt-2 text-gray-400">
+            Call Now: (+234) 803 123 4567
+        </p>
+
+    </footer>
+
+    <a href="tel:+2348031234567" class="mobile-call">
+        Call Now
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
