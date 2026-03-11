@@ -1,11 +1,6 @@
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  background-image: url('assets/bg1.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-color: #ffffff;
+  background-color: #f8fafc; /* Professional fallback color */
   min-height: 100vh;
   color: #1a1a1a;
   line-height: 1.6;
@@ -19,12 +14,18 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: inherit;
-  background-size: inherit;
-  background-repeat: inherit;
-  background-position: inherit;
-  background-attachment: inherit;
+  background-image: url('assets/bg1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   filter: blur(8px) brightness(0.95);
+  opacity: 0; /* Hidden initially */
+  transition: opacity 1s ease-in-out;
+}
+
+body.image-loaded::before {
+  opacity: 1; /* Fade in when image is ready */
 }
 
 /* Mobile/tablet fallback to avoid jank with fixed backgrounds */

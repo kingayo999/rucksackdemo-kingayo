@@ -1,3 +1,10 @@
+// Background Image Load Optimization
+const bgImage = new Image();
+bgImage.src = 'assets/bg1.png';
+bgImage.onload = () => {
+    document.body.classList.add('image-loaded');
+};
+
 if (window.gsap) {
     if (window.ScrollTrigger) {
         gsap.registerPlugin(ScrollTrigger);
