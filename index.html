@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,16 +9,16 @@
     <title>RuckSack To Vacuum Pack | Professional Cleaning Services | Sparkling Clean Homes</title>
 
     <meta name="description"
-        content="Professional cleaning services in Lagos, Abuja & Nigeria. Eco-friendly, reliable cleaners with 4.9/5 rating. Free quotes, background-checked staff. Book today!">
+        content="Professional cleaning services. Eco-friendly, reliable cleaners with 4.9/5 rating. Free quotes, background-checked staff. Book today!">
 
     <meta name="keywords"
-        content="house cleaning Lagos, office cleaning Abuja, airbnb cleaning Nigeria, move out cleaning, professional cleaners Nigeria">
+        content="house cleaning Lake Charles, office cleaning Louisiana, airbnb cleaning LA, move out cleaning, professional cleaners Lake Charles">
 
     <meta name="robots" content="index, follow">
 
-    <meta property="og:title" content="RuckSack To Vacuum Pack Cleaning Services Nigeria">
+    <meta property="og:title" content="RuckSack To Vacuum Pack Cleaning Services">
     <meta property="og:description"
-        content="Premium professional cleaning services in Lagos, Abuja and across Nigeria.">
+        content="Premium professional cleaning services.">
     <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,25 +41,19 @@
 {
 "@context":"https://schema.org",
 "@type":"CleaningService",
-"name":"RuckSack To Vacuum Pack Cleaning Services Nigeria",
+"name":"RuckSack To Vacuum Pack Cleaning Services",
 "image":"logo.png",
-"telephone":"+234-803-123-4567",
+"telephone":"+1(337)-353-7783",
+"email":"calvin.kornegay@yahoo.com",
 "priceRange":"$$",
 "address":{
 "@type":"PostalAddress",
-"streetAddress":"Plot 123 Lekki Phase 1",
-"addressLocality":"Lagos",
-"addressRegion":"Lagos State",
-"postalCode":"100001",
-"addressCountry":"NG"
-},
-"areaServed":[
-"Lagos",
-"Abuja",
-"Port Harcourt",
-"Ibadan",
-"Kano"
-]
+"streetAddress":"123 Main St",
+"addressLocality":"Lake Charles",
+"addressRegion":"LA",
+"postalCode":"70601",
+"addressCountry":"US"
+}
 }
 </script>
 
@@ -69,7 +63,7 @@
 
     <!-- HEADER -->
 
-    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50 shadow-sm">
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-[70]">
 
         <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
 
@@ -82,7 +76,6 @@
 
                 <a href="index.html" class="hover:text-blue-600 transition-colors">Home</a>
                 <a href="services.html" class="hover:text-blue-600 transition-colors">Services</a>
-                <a href="pricing.html" class="hover:text-blue-600 transition-colors">Pricing</a>
                 <a href="reviews.html" class="hover:text-blue-600 transition-colors">Reviews</a>
 
             </nav>
@@ -104,7 +97,6 @@
         <div class="flex flex-col p-6 gap-4">
             <a href="index.html" class="hover:text-blue-600 font-semibold border-b border-gray-100 pb-2">Home</a>
             <a href="services.html" class="hover:text-blue-600 font-semibold border-b border-gray-100 pb-2">Services</a>
-            <a href="pricing.html" class="hover:text-blue-600 font-semibold border-b border-gray-100 pb-2">Pricing</a>
             <a href="reviews.html" class="hover:text-blue-600 font-semibold border-b border-gray-100 pb-2">Reviews</a>
             <a href="#booking" class="cta-primary text-center mt-2">Book Cleaning</a>
         </div>
@@ -113,7 +105,7 @@
 
     <!-- HERO -->
 
-    <section class="hero min-h-screen flex items-center pt-32 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <section class="hero min-h-screen flex items-center pt-32">
 
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 p-6">
 
@@ -130,7 +122,7 @@
                 <p class="text-xl text-gray-600 mb-8 leading-relaxed">
 
                     Tired of cleaning? Let our professional team handle it. Eco-friendly, reliable, and affordable
-                    cleaning services for busy homeowners, property managers, and Airbnb hosts across Nigeria.
+                    cleaning services for busy homeowners, property managers, and Airbnb hosts across Louisiana.
 
                 </p>
 
@@ -181,41 +173,48 @@
                     Book Your Cleaning Today
                 </h3>
 
-                <form class="space-y-4">
+                <form action="https://formsubmit.co/calvin.kornegay@yahoo.com" method="POST" class="space-y-4">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="Cleaning Service Booking - RuckSack To Vacuum Pack">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
 
                     <div class="grid md:grid-cols-2 gap-4">
-                        <input class="form-input" placeholder="Name" required>
-                        <input class="form-input" placeholder="Phone" required>
+                        <input name="Full Name" class="form-input" placeholder="Full Name" required>
+                        <input name="Phone" class="form-input" placeholder="Phone Number" required>
                     </div>
 
                     <div class="grid md:grid-cols-2 gap-4">
-                        <input class="form-input" placeholder="Email" required>
-                        <select class="form-input" required>
-                            <option>Service Type</option>
-                            <option>Home Cleaning</option>
+                        <input type="email" name="Email" class="form-input" placeholder="Email Address" required>
+                        <input name="Zip Code" class="form-input" placeholder="Zip Code" required>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <select name="Service Type" class="form-input" required>
+                            <option value="" disabled selected>Service Type</option>
+                            <option>Standard Home Cleaning</option>
                             <option>Deep Cleaning</option>
-                            <option>Office Cleaning</option>
-                            <option>Move In / Out</option>
-                            <option>Airbnb Cleaning</option>
+                            <option>Move In / Move Out</option>
+                            <option>Commercial/Office Cleaning</option>
+                            <option>Vacation Rental/Airbnb</option>
+                        </select>
+                        <select name="Property Size" class="form-input" required>
+                            <option value="" disabled selected>Property Size</option>
+                            <option>Studio / 1 Bedroom</option>
+                            <option>2-3 Bedrooms</option>
+                            <option>4+ Bedrooms</option>
+                            <option>Commercial Space</option>
                         </select>
                     </div>
 
-                    <select class="form-input" required>
-                        <option>Property Size</option>
-                        <option>Apartment</option>
-                        <option>Small Home</option>
-                        <option>Large Home</option>
-                        <option>Office</option>
-                    </select>
-
-                    <button class="cta-primary w-full py-3">
-                        Request Free Quote
+                    <button type="submit" class="cta-primary w-full py-3">
+                        Get My Free Estimate
                     </button>
 
                 </form>
 
                 <p class="text-center text-sm text-gray-500 mt-4">
-                    No obligation. We'll call you within 24 hours.
+                    Fast response. We'll contact you within one business day.
                 </p>
 
             </div>
@@ -227,7 +226,7 @@
 
     <!-- WHY CLEANING MATTERS -->
 
-    <section class="py-24 bg-white">
+    <section class="py-24 bg-transparent">
 
         <div class="max-w-6xl mx-auto p-6">
 
@@ -391,7 +390,7 @@
                 </h2>
 
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Don't just take our word for it. Here's what our satisfied customers across Nigeria have to say
+                    Don't just take our word for it. Here's what our satisfied customers across the region have to say
                     about our cleaning services.
                 </p>
 
@@ -412,17 +411,17 @@
                                     <i class="fas fa-star text-yellow-400 text-xl"></i>
                                 </div>
                                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                                    "RuckSack To Vacuum Pack transformed my Lekki apartment! The team was professional,
-                                    arrived on time, and left my home sparkling clean. The attention to detail in the
-                                    kitchen and bathrooms was exceptional. Highly recommend for anyone in Lagos!"
+                                    "RuckSack To Vacuum Pack transformed my home! The team was professional,
+                                    arrived on time, and left my place sparkling clean. The attention to detail in the
+                                    kitchen and bathrooms was exceptional. Highly recommend!"
                                 </p>
                                 <div class="flex items-center justify-center gap-4">
                                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                                         <i class="fas fa-user text-blue-600"></i>
                                     </div>
                                     <div class="text-left">
-                                        <div class="font-semibold text-gray-900">Adunni Okafor</div>
-                                        <div class="text-gray-500 text-sm">Lekki, Lagos</div>
+                                        <div class="font-semibold text-gray-900">Sarah Jenkins</div>
+                                        <div class="text-gray-500 text-sm">Lake Charles, LA</div>
                                     </div>
                                 </div>
                             </div>
@@ -439,17 +438,17 @@
                                     <i class="fas fa-star text-yellow-400 text-xl"></i>
                                 </div>
                                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                                    "Amazing service! I run a busy Airbnb in Victoria Island and these guys make sure my
+                                    "Amazing service! I run a busy Airbnb and these guys make sure my
                                     property is always guest-ready. Their deep cleaning service removed stains I didn't
-                                    even know were there. Worth every naira!"
+                                    even know were there. Worth every penny!"
                                 </p>
                                 <div class="flex items-center justify-center gap-4">
                                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                                         <i class="fas fa-user text-blue-600"></i>
                                     </div>
                                     <div class="text-left">
-                                        <div class="font-semibold text-gray-900">Chike Nwosu</div>
-                                        <div class="text-gray-500 text-sm">Victoria Island, Lagos</div>
+                                        <div class="font-semibold text-gray-900">Michael Thompson</div>
+                                        <div class="text-gray-500 text-sm">Lafayette, LA</div>
                                     </div>
                                 </div>
                             </div>
@@ -466,7 +465,7 @@
                                     <i class="fas fa-star text-yellow-400 text-xl"></i>
                                 </div>
                                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                                    "As a working mother in Abuja, I don't have time for cleaning. RuckSack To Vacuum
+                                    "As a working mother, I don't have time for cleaning. RuckSack To Vacuum
                                     Pack comes every two weeks and my house stays immaculate. Their staff are courteous
                                     and trustworthy. Best decision I made!"
                                 </p>
@@ -475,8 +474,8 @@
                                         <i class="fas fa-user text-blue-600"></i>
                                     </div>
                                     <div class="text-left">
-                                        <div class="font-semibold text-gray-900">Fatima Ibrahim</div>
-                                        <div class="text-gray-500 text-sm">Wuse II, Abuja</div>
+                                        <div class="font-semibold text-gray-900">Emily Davis</div>
+                                        <div class="text-gray-500 text-sm">Lake Charles, LA</div>
                                     </div>
                                 </div>
                             </div>
@@ -493,7 +492,7 @@
                                     <i class="fas fa-star text-yellow-400 text-xl"></i>
                                 </div>
                                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                                    "Outstanding office cleaning service! Our Port Harcourt office has never looked
+                                    "Outstanding office cleaning service! Our regional office has never looked
                                     better. The team understands the importance of a clean workspace for productivity.
                                     Eco-friendly products are a big plus for our green initiative."
                                 </p>
@@ -502,8 +501,8 @@
                                         <i class="fas fa-user text-blue-600"></i>
                                     </div>
                                     <div class="text-left">
-                                        <div class="font-semibold text-gray-900">Emeka Chukwu</div>
-                                        <div class="text-gray-500 text-sm">GRA, Port Harcourt</div>
+                                        <div class="font-semibold text-gray-900">Robert Miller</div>
+                                        <div class="text-gray-500 text-sm">Sulphur, LA</div>
                                     </div>
                                 </div>
                             </div>
@@ -520,7 +519,7 @@
                                     <i class="fas fa-star text-yellow-400 text-xl"></i>
                                 </div>
                                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                                    "Moving into my new home in Ibadan was stressful enough without worrying about
+                                    "Moving into my new home in Lake Charles was stressful enough without worrying about
                                     cleaning. These professionals made the transition smooth. They even cleaned
                                     hard-to-reach areas. Very satisfied customer!"
                                 </p>
@@ -529,8 +528,8 @@
                                         <i class="fas fa-user text-blue-600"></i>
                                     </div>
                                     <div class="text-left">
-                                        <div class="font-semibold text-gray-900">Yetunde Adebayo</div>
-                                        <div class="text-gray-500 text-sm">Bodija, Ibadan</div>
+                                        <div class="font-semibold text-gray-900">Amanda Wilson</div>
+                                        <div class="text-gray-500 text-sm">Moss Bluff, LA</div>
                                     </div>
                                 </div>
                             </div>
@@ -559,100 +558,7 @@
     </section>
 
 
-    <!-- PRICING PREVIEW -->
 
-    <section class="py-24 bg-white">
-
-        <div class="max-w-6xl mx-auto p-6">
-
-            <div class="text-center mb-16">
-
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-                    Simple, Transparent Pricing
-                </h2>
-
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    No hidden fees, no surprises. Choose the perfect cleaning package for your needs.
-                </p>
-
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-
-                <div class="price-card bg-white p-8 text-center">
-
-                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Standard Clean</h3>
-
-                    <p class="text-gray-600 mb-6">Perfect for regular maintenance and light cleaning needs.</p>
-
-                    <div class="text-4xl font-bold text-blue-600 mb-2">$100</div>
-
-                    <p class="text-sm text-gray-500 mb-6">Starting price</p>
-
-                    <ul class="text-left space-y-2 mb-8 text-gray-600">
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Dusting and wiping surfaces</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Vacuuming and mopping</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Bathroom cleaning</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Kitchen cleaning</li>
-                    </ul>
-
-                    <a href="pricing.html" class="cta-primary w-full">Choose Plan</a>
-
-                </div>
-
-                <div class="price-card bg-white p-8 text-center highlight">
-
-                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Deep Clean</h3>
-
-                    <p class="text-gray-600 mb-6">Comprehensive cleaning for a fresh, thorough result.</p>
-
-                    <div class="text-4xl font-bold text-blue-600 mb-2">$200</div>
-
-                    <p class="text-sm text-gray-500 mb-6">Starting price</p>
-
-                    <ul class="text-left space-y-2 mb-8 text-gray-600">
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Everything in Standard</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Inside appliances</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Baseboards and vents</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Window sills</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Upholstery cleaning</li>
-                    </ul>
-
-                    <a href="pricing.html" class="cta-primary w-full">Choose Plan</a>
-
-                </div>
-
-                <div class="price-card bg-white p-8 text-center">
-
-                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Custom Quote</h3>
-
-                    <p class="text-gray-600 mb-6">Tailored solutions for offices, large homes, or special requirements.
-                    </p>
-
-                    <div class="text-4xl font-bold text-blue-600 mb-2">Call Us</div>
-
-                    <p class="text-sm text-gray-500 mb-6">For personalized pricing</p>
-
-                    <ul class="text-left space-y-2 mb-8 text-gray-600">
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Office buildings</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Large properties</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Special projects</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Recurring services</li>
-                    </ul>
-
-                    <a href="tel:+2348031234567" class="cta-primary w-full">Call Now</a>
-
-                </div>
-
-            </div>
-
-            <div class="text-center mt-12">
-                <a href="pricing.html" class="cta-secondary text-lg px-8 py-4">View All Pricing Options</a>
-            </div>
-
-        </div>
-
-    </section>
 
 
     <!-- FAQ PREVIEW -->
@@ -760,19 +666,19 @@
             </h2>
 
             <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                Join hundreds of satisfied customers across Lagos, Abuja, and Nigeria who trust us with their cleaning
+                Join hundreds of satisfied customers who trust us with their cleaning
                 needs. Professional, reliable, and affordable service that you can count on.
             </p>
 
             <div class="flex flex-col sm:flex-row justify-center gap-6 mb-8">
 
-                <a href="#booking" class="cta-primary bg-white text-blue-600 hover:bg-gray-50 text-lg px-8 py-4">
+                <a href="#booking" class="cta-primary bg-indigo-900 text-white hover:bg-black text-lg px-8 py-4">
                     Book Your Cleaning Today
                 </a>
 
-                <a href="tel:+2348031234567"
+                <a href="tel:+13373537783"
                     class="cta-secondary border-2 border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-4">
-                    Call (+234) 803 123 4567
+                    Call +1(337)-353-7783
                 </a>
 
             </div>
@@ -825,30 +731,25 @@
                         <div class="flex items-center gap-3">
                             <i class="fas fa-phone text-blue-600"></i>
                             <div>
-                                <strong>Phone:</strong> <a href="tel:+2348031234567"
-                                    class="text-blue-600 hover:underline">(+234) 803 123 4567</a>
+                                <strong>Phone:</strong> <a href="tel:+13373537783"
+                                    class="text-blue-600 hover:underline">+1(337)-353-7783</a>
                             </div>
                         </div>
 
                         <div class="flex items-center gap-3">
                             <i class="fas fa-envelope text-blue-600"></i>
                             <div>
-                                <strong>Email:</strong> <a href="mailto:info@rucksacktovacuum.ng"
-                                    class="text-blue-600 hover:underline">info@rucksacktovacuum.ng</a>
+                                <strong>Email:</strong> <a href="mailto:calvin.kornegay@yahoo.com"
+                                    class="text-blue-600 hover:underline">calvin.kornegay@yahoo.com</a>
                             </div>
                         </div>
 
-                        <div class="flex items-center gap-3">
-                            <i class="fas fa-map-marker-alt text-blue-600"></i>
-                            <div>
-                                <strong>Service Areas:</strong> Lagos, Abuja, Port Harcourt, Ibadan & Kano
-                            </div>
-                        </div>
+
 
                         <div class="flex items-center gap-3">
                             <i class="fas fa-clock text-blue-600"></i>
                             <div>
-                                <strong>Hours:</strong> Monday-Saturday 8AM-6PM
+                                <strong>Hours:</strong> Mon-Fri: 8AM-6PM | Sat: 9AM-4PM
                             </div>
                         </div>
 
@@ -862,17 +763,20 @@
                         Quick Contact Form
                     </h3>
 
-                    <form class="space-y-4">
+                    <form action="https://formsubmit.co/calvin.kornegay@yahoo.com" method="POST" class="space-y-4">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="New Quick Contact Message!">
+                        <input type="hidden" name="_captcha" value="false">
 
-                        <input class="form-input" placeholder="Your Name" required>
+                        <input name="Name" class="form-input" placeholder="Your Name" required>
 
-                        <input class="form-input" placeholder="Phone Number" required>
+                        <input name="Phone" class="form-input" placeholder="Phone Number" required>
 
-                        <input class="form-input" placeholder="Email Address" required>
+                        <input type="email" name="Email" class="form-input" placeholder="Email Address" required>
 
-                        <textarea class="form-input" rows="4" placeholder="How can we help you?" required></textarea>
+                        <textarea name="Message" class="form-input" rows="4" placeholder="How can we help you?" required></textarea>
 
-                        <button class="cta-primary w-full py-3">
+                        <button type="submit" class="cta-primary w-full py-3">
                             Send Message
                         </button>
 
@@ -891,16 +795,16 @@
 
     <footer class="bg-gray-900 py-10 text-center text-white">
 
-        <p>&copy; 2026 RuckSack To Vacuum Pack Cleaning Services Nigeria</p>
+        <p>&copy; 2026 RuckSack To Vacuum Pack Cleaning Services</p>
 
         <p class="mt-2 text-gray-400">
-            Call Now: (+234) 803 123 4567
+            Call Now: +1(337)-353-7783 <br>Email: calvin.kornegay@yahoo.com
         </p>
 
     </footer>
 
 
-    <a href="tel:+2348031234567" class="mobile-call">
+    <a href="tel:+13373537783" class="mobile-call">
         Call Now
     </a>
 
